@@ -43,7 +43,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Vilas Photo Studio"
-              className="h-45 md:h-32 w-auto"
+              className="h-45 md:h-32 w-auto scale-[1.6]"
             />
           </Link>
 

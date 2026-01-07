@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import heroImage from '@/assets/image.png';
+import heroImage from '@/assets/bimgv.jpg';
 
 const HeroSection = () => {
   const scrollToContent = () => {
@@ -31,7 +31,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-4xl mx-auto"
         >
-          {/* EST 1999 */}
+          {/* EST 1975 */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-[#1A1A1A] text-5xl md:text-7xl font-bold tracking-wide mb-6 drop-shadow-[0_6px_18px_rgba(0,0,0,0.45)]"
+            className="text-white text-5xl md:text-7xl font-bold tracking-wide mb-6 drop-shadow-[0_6px_20px_rgba(0,0,0,0.75)]"
           >
             Vilas Photo Studio
           </motion.h1>
@@ -56,7 +56,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="text-2xl md:text-3xl font-semibold text-[#2A2A2A] mb-4 drop-shadow-[0_3px_10px_rgba(0,0,0,0.35)]"
+            className="text-2xl md:text-3xl font-semibold text-white mb-4 drop-shadow-[0_4px_14px_rgba(0,0,0,0.6)]"
           >
             25+ Years of Excellence in Photography & Videography
           </motion.p>
@@ -66,7 +66,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.9 }}
-            className="text-[#1A1A1A] text-lg md:text-xl font-medium max-w-2xl mx-auto mb-10 drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]"
+            className="text-white text-lg md:text-xl font-medium max-w-2xl mx-auto mb-10 drop-shadow-[0_3px_12px_rgba(0,0,0,0.6)]"
           >
             Specializing in Corporate Events • Weddings • Social Events • Fashion • Industrial Photography
           </motion.p>

@@ -20,6 +20,22 @@ import corporate4 from '@/assets/image (4).webp';
 import corporate5 from '@/assets/image (5).webp';
 import fashion1 from '@/assets/f1.webp';
 import fashion2 from '@/assets/f2.webp';
+import wdv1 from '@/assets/wdv1.webp';
+import wdv2 from '@/assets/wdv2.webp';
+import wdv3 from '@/assets/wdv3.webp';
+import fdv2 from '@/assets/fdv2.webp';
+import fdv3 from '@/assets/fdv3.webp';
+import fdv4 from '@/assets/fdv4.webp';
+import idv1 from '@/assets/idv1.webp';
+import idv2 from '@/assets/idv2.webp';
+import idv3 from '@/assets/idv3.webp';
+import idv4 from '@/assets/idv4.webp';
+import idv5 from '@/assets/idv5.webp';
+import scd8 from '@/assets/scd8.webp';
+import svd2 from '@/assets/svd2.webp';
+import svd7 from '@/assets/svd7.webp';
+import ptv1 from '@/assets/ptv1.webp';
+import pdv2 from '@/assets/pdv2.webp';
 
 const categories = ['All', 'Weddings', 'Corporate', 'Fashion', 'Industrial', 'Social', 'Portraits'];
 
@@ -39,6 +55,24 @@ const portfolioItems = [
   { src: corporate5, alt: 'Corporate Conference', category: 'Corporate' },
   { src: fashion1, alt: 'Fashion Editorial', category: 'Fashion' },
   { src: fashion2, alt: 'Fashion Editorial', category: 'Fashion' },
+  { src: wdv1, alt: 'Wedding Portrait', category: 'Weddings' },
+  { src: wdv2, alt: 'Wedding Portrait', category: 'Weddings' },
+  { src: wdv3, alt: 'Wedding Portrait', category: 'Weddings' },
+  { src: fdv2, alt: 'Fashion Editorial', category: 'Fashion' },
+  { src: fdv3, alt: 'Fashion Editorial', category: 'Fashion' },
+  { src: fdv4, alt: 'Fashion Editorial', category: 'Fashion' },
+  { src: idv1, alt: 'Manufacturing Facility', category: 'Industrial' },
+  { src: idv2, alt: 'Manufacturing Facility', category: 'Industrial' },
+  { src: idv3, alt: 'Manufacturing Facility', category: 'Industrial' },
+  { src: idv4, alt: 'Manufacturing Facility', category: 'Industrial' },
+  { src: idv5, alt: 'Manufacturing Facility', category: 'Industrial' },
+  { src: scd8, alt: 'Republic Day', category: 'Social' },
+  { src: svd2, alt: 'Holi Festival', category: 'Social' },
+  { src: svd7, alt: 'Republic Day', category: 'Social' },
+  { src: ptv1, alt: 'Family Portrait', category: 'Portraits' },
+  { src: pdv2, alt: 'Family Portrait', category: 'Portraits' },
+  
+  
 ];
 
 const OurWork = () => {
