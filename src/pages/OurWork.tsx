@@ -11,7 +11,6 @@ import preweddingImage from '@/assets/prewedding.webp';
 import portraitImage from '@/assets/familypic.webp';
 import socialImage from '@/assets/birthday.webp';
 import industrialImage from '@/assets/industry.webp';
-import heroImage from '@/assets/image.png';
 import corporatemeet from '@/assets/corporatemeet.webp';
 import corporate2 from '@/assets/image (2).webp';
 import corporate3 from '@/assets/image (3).webp';
@@ -57,7 +56,7 @@ const categories = ['All', 'Weddings', 'Corporate', 'Fashion', 'Industrial', 'So
 
 const portfolioItems = [
   { src: weddingImage, alt: 'Indian Wedding Ceremony', category: 'Weddings' },
-  { src: heroImage, alt: 'Wedding Portrait', category: 'Weddings' },
+
   { src: preweddingImage, alt: 'Pre-Wedding Shoot', category: 'Weddings' },
   { src: corporateImage, alt: 'Corporate Conference', category: 'Corporate' },
   { src: industrialImage, alt: 'Manufacturing Facility', category: 'Industrial' },
