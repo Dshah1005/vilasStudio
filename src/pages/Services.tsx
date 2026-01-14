@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Camera, Video, Frame, Book, Shirt, Printer, FileText, Gift, X } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -9,13 +8,11 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 
 import weddingImage from '@/assets/weddingcam.jpeg';
 import corporateImage from '@/assets/corporate-event.webp';
-import fashionImage from '@/assets/fashion.webp';
 import industrialImage from '@/assets/industry.webp';
 import socialImage from '@/assets/birthday.webp';
 import albumImage from '@/assets/album.webp';
 import framesImage from '@/assets/customframe.webp';
 import mugsImage from '@/assets/mug.jpg';
-import pillowsImage from '@/assets/pillowimg.webp';
 import tshirtsImage from '@/assets/photo-tshirts.jpg';
 import laserImage from '@/assets/laser-printing.jpg';
 import xeroxImage from '@/assets/xerox-services.jpg';
@@ -45,13 +42,6 @@ const photographyServices = [
     icon: Camera,
   },
   {
-    title: 'Fashion Photography',
-    description:
-      'Editorial and commercial fashion shoots with creative direction and expert lighting.',
-    image: fashionImage,
-    icon: Camera,
-  },
-  {
     title: 'Industrial Photography',
     description:
       'Documentation of manufacturing facilities and industrial environments.',
@@ -63,11 +53,36 @@ const photographyServices = [
 const additionalServices = [
   { title: 'Custom Photo Frames', description: 'Premium quality frames.', icon: Frame, image: framesImage },
   { title: 'Wedding Albums', description: 'Elegant handcrafted albums.', icon: Book, image: albumImage },
-  { title: 'Photo Mugs & Pillows', description: 'Personalized gifts.', icon: Gift, image: mugsImage },
+  { title: 'Photo Mugs', description: 'Personalized photo mugs.', icon: Gift, image: mugsImage },
   { title: 'Photo T-Shirts', description: 'Printed t-shirts.', icon: Shirt, image: tshirtsImage },
   { title: 'Laser Printing', description: 'Laser printing services.', icon: Printer, image: laserImage },
   { title: 'Xerox Services', description: 'Photocopy services.', icon: FileText, image: xeroxImage },
 ];
+
+/* ---------------- PRICE ROW ---------------- */
+
+const PriceRow = ({
+  label,
+  value,
+  highlight = false,
+}: {
+  label: string;
+  value: string;
+  highlight?: boolean;
+}) => {
+  return (
+    <div className="flex items-center justify-between border-b border-border/40 pb-2">
+      <span className="text-muted-foreground">{label}</span>
+      <span
+        className={`font-medium ${
+          highlight ? 'text-burgundy' : 'text-foreground'
+        }`}
+      >
+        {value}
+      </span>
+    </div>
+  );
+};
 
 /* ---------------- CARD ---------------- */
 
@@ -134,7 +149,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Photography (UNCHANGED) */}
+      {/* Photography */}
       <section className="section-padding">
         <div className="container-wide grid grid-cols-1 md:grid-cols-2 gap-8">
           {photographyServices.map((service, index) => (
@@ -143,7 +158,73 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Photo Products & Printing (ONLY CHANGE HERE) */}
+      {/* Pricing */}
+      <section className="section-padding bg-secondary/10">
+        <div className="container-wide max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-burgundy text-xs tracking-[0.3em] uppercase mb-4">
+              Packages
+            </p>
+            <h2 className="heading-section mb-5">
+              Photography & Videography Pricing
+            </h2>
+            <p className="text-elegant max-w-2xl mx-auto">
+              Thoughtfully curated packages designed to capture every moment with elegance.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="bg-background rounded-2xl p-8 shadow-soft">
+              <h3 className="font-serif text-2xl mb-6">Engagement</h3>
+              <div className="space-y-4 text-sm">
+                <PriceRow label="Traditional Photography" value="₹6,500" />
+                <PriceRow label="Candid Photography" value="₹12,000" />
+                <PriceRow label="Traditional Video" value="₹10,000" />
+                <PriceRow label="Cinematic Video" value="₹16,000" />
+                <PriceRow label="Instagram Reel" value="Included" highlight />
+              </div>
+            </div>
+
+            <div className="bg-background rounded-2xl p-8 shadow-soft">
+              <h3 className="font-serif text-2xl mb-6">Haldi</h3>
+              <div className="space-y-4 text-sm">
+                <PriceRow label="Traditional Photography" value="₹6,500" />
+                <PriceRow label="Candid Photography" value="₹12,000" />
+                <PriceRow label="Traditional Video" value="₹10,000" />
+              </div>
+            </div>
+
+            <div className="bg-background rounded-2xl p-8 shadow-soft">
+              <h3 className="font-serif text-2xl mb-6">Wedding</h3>
+              <div className="space-y-4 text-sm">
+                <PriceRow label="Traditional Photography" value="₹10,000" />
+                <PriceRow label="Candid Photography" value="₹15,000" />
+                <PriceRow label="Family Photography" value="Included" highlight />
+                <PriceRow label="Cinematic Video" value="₹20,000" />
+                <PriceRow label="Traditional Video" value="₹12,000" />
+              </div>
+            </div>
+
+            <div className="bg-background rounded-2xl p-8 shadow-soft">
+              <h3 className="font-serif text-2xl mb-6">
+                Birthday & Social Events
+              </h3>
+              <div className="space-y-4 text-sm">
+                <PriceRow label="Traditional Photography" value="₹4,500" />
+                <PriceRow label="Candid Photography" value="₹10,000" />
+                <PriceRow label="Cinematic Video" value="₹15,000" />
+                <PriceRow label="Traditional Video" value="₹8,500" />
+              </div>
+            </div>
+          </div>
+
+          <p className="text-center text-xs text-muted-foreground mt-12">
+            * Final pricing may vary based on location, duration, and customization.
+          </p>
+        </div>
+      </section>
+
+      {/* Photo Products */}
       <section className="section-padding bg-secondary/30">
         <div className="container-wide">
           <h2 className="heading-section text-center mb-12">Photo Products & Printing</h2>
@@ -164,7 +245,7 @@ const Services = () => {
       <Footer />
       <WhatsAppButton />
 
-      {/* SINGLE IMAGE LIGHTBOX */}
+      {/* Lightbox */}
       <AnimatePresence>
         {lightboxOpen && (
           <motion.div

@@ -6,7 +6,6 @@ import { ArrowRight } from 'lucide-react';
 
 import weddingImage from '@/assets/weddingcam.jpeg';
 import corporateImage from '@/assets/corporate-event.webp';
-import fashionImage from '@/assets/fashion.webp';
 import industrialImage from '@/assets/industry.webp';
 import socialImage from '@/assets/birthday.webp';
 import framesImage from '@/assets/customframe.webp';
@@ -24,11 +23,6 @@ const services = [
     title: 'Corporate Events',
     description: 'Professional coverage for conferences, product launches, and corporate celebrations.',
     image: corporateImage,
-  },
-  {
-    title: 'Fashion Photography',
-    description: 'Editorial and commercial fashion shoots that showcase style and creativity.',
-    image: fashionImage,
   },
   {
     title: 'Industrial Photography',
@@ -137,6 +131,17 @@ const ServicesPreview = () => {
             </motion.div>
           ))}
         </div>
+
+
+
+    
+          
+
+
+
+
+
+
 
         {/* CTA */}
         <motion.div

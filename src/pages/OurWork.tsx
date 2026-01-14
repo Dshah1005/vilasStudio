@@ -7,7 +7,6 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 
 import weddingImage from '@/assets/weddingcam.jpeg';
 import corporateImage from '@/assets/corporate-event.webp';
-import fashionImage from '@/assets/fashion.webp';
 import preweddingImage from '@/assets/prewedding.webp';
 import portraitImage from '@/assets/familypic.webp';
 import socialImage from '@/assets/birthday.webp';
@@ -18,13 +17,7 @@ import corporate2 from '@/assets/image (2).webp';
 import corporate3 from '@/assets/image (3).webp';
 import corporate4 from '@/assets/image (4).webp';
 import corporate5 from '@/assets/image (5).webp';
-import fashion1 from '@/assets/f1.webp';
-import fashion2 from '@/assets/f2.webp';
-// /import wdv1 from '@/assets/wdv1.webp';
-//import wdv2 from '@/assets/wdv2.webp';
-//import wdv3 from '@/assets/wdv3.webp';
 import fdv3 from '@/assets/fdv3.webp';
-import fdv4 from '@/assets/fdv4.webp';
 import idv3 from '@/assets/idv3.webp';
 import idv4 from '@/assets/idv4.webp';
 import idv5 from '@/assets/idv5.webp';
@@ -50,6 +43,13 @@ import bicep from '@/assets/bic.webp';
 import jeans from '@/assets/jean.webp';
 import jeans2 from '@/assets/j2.webp';
 import hans from '@/assets/hand.webp';
+import aas from '@/assets/aas.jpeg';
+import asa from '@/assets/asa.jpeg';
+import nose from '@/assets/asa.jpeg';
+import ppl from '@/assets/ppl.png';
+import blue from '@/assets/blue.png';
+import abcd from '@/assets/abcd.png';
+import net from '@/assets/net.png';
 
 
 
@@ -60,7 +60,6 @@ const portfolioItems = [
   { src: heroImage, alt: 'Wedding Portrait', category: 'Weddings' },
   { src: preweddingImage, alt: 'Pre-Wedding Shoot', category: 'Weddings' },
   { src: corporateImage, alt: 'Corporate Conference', category: 'Corporate' },
-  { src: fashionImage, alt: 'Fashion Editorial', category: 'Fashion' },
   { src: industrialImage, alt: 'Manufacturing Facility', category: 'Industrial' },
   { src: portraitImage, alt: 'Family Portrait', category: 'Portraits' },
   { src: socialImage, alt: 'Birthday Celebration', category: 'Social' },
@@ -69,14 +68,8 @@ const portfolioItems = [
   { src: corporate3, alt: 'Corporate Conference', category: 'Corporate' },
   { src: corporate4, alt: 'Corporate Conference', category: 'Corporate' },
   { src: corporate5, alt: 'Corporate Conference', category: 'Corporate' },
-  { src: fashion1, alt: 'Fashion Editorial', category: 'Fashion' },
-  { src: fashion2, alt: 'Fashion Editorial', category: 'Fashion' },
-  //{ src: wdv1, alt: 'Wedding Portrait', category: 'Weddings' },
-  //{ src: wdv2, alt: 'Wedding Portrait', category: 'Weddings' },
-  //{ src: wdv3, alt: 'Wedding Portrait', category: 'Weddings' },
   { src: fdv3, alt: 'Fashion Editorial', category: 'Fashion' },
-  { src: fdv4, alt: 'Fashion Editorial', category: 'Fashion' },
-  { src: f3, alt: 'Fashion Editorial', category: 'Fashion' },
+    { src: f3, alt: 'Fashion Editorial', category: 'Fashion' },
   
   { src: idv3, alt: 'Manufacturing Facility', category: 'Industrial' },
   { src: idv4, alt: 'Manufacturing Facility', category: 'Industrial' },
@@ -101,7 +94,14 @@ const portfolioItems = [
   { src: bicep, alt: 'Body Building Competition Photoshoot', category: 'Social' },
   { src: jeans, alt: 'Fashion Photography', category: 'Fashion' },
   { src: jeans2, alt: 'Fashion Photography', category: 'Fashion' },
-  { src: hans, alt: 'Wedding Portrait', category: 'Wedding' },
+  { src: hans, alt: 'Wedding Portrait', category: 'Weddings' },
+  { src: asa, alt: 'Wedding Portrait', category: 'Weddings' },
+  { src: aas, alt: 'Wedding Portrait', category: 'Weddings' },
+  { src: nose, alt: 'Wedding Portrait', category: 'Weddings' },
+  { src: ppl, alt: 'Manufacturing Facility', category: 'Industrial' },
+   { src: blue, alt: 'Manufacturing Facility', category: 'Industrial' },
+   { src: abcd, alt: 'Corporate Conference', category: 'Corporate' },
+   { src: net, alt: 'Magzine Cover Photography', category: 'Social' },
 
 
 ];

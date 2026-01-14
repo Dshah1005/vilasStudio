@@ -6,7 +6,6 @@ import { ArrowRight, X } from 'lucide-react';
 
 import weddingImage from '@/assets/weddingcam.jpeg';
 import corporateImage from '@/assets/corporate-event.webp';
-import fashionImage from '@/assets/fashion.webp';
 import preweddingImage from '@/assets/prewedding.webp';
 import portraitImage from '@/assets/familypic.webp';
 import socialImage from '@/assets/birthday.webp';
@@ -14,8 +13,6 @@ import socialImage from '@/assets/birthday.webp';
 const portfolioImages = [
   { src: weddingImage, alt: 'Wedding Photography', category: 'Wedding' },
   { src: preweddingImage, alt: 'Pre-Wedding Shoot', category: 'Wedding' },
-  { src: corporateImage, alt: 'Corporate Event', category: 'Corporate' },
-  { src: fashionImage, alt: 'Fashion Photography', category: 'Fashion' },
   { src: portraitImage, alt: 'Portrait Session', category: 'Portrait' },
   { src: socialImage, alt: 'Social Event', category: 'Events' },
 ];
